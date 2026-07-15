@@ -60,7 +60,7 @@ h1, h2, h3 {
   letter-spacing: -0.015em;
   font-optical-sizing: auto;
 }
-h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; color: var(--rose); }
+h1 em, h2 em, h3 em, p em { font-style: italic; font-weight: 400; color: var(--rose); }
 
 .background_logo {
   opacity: 0.06;
@@ -152,7 +152,7 @@ h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; color: var(--rose); 
   font-family: var(--font-mono); font-size: 0.9rem;
   color: var(--rose); letter-spacing: 0.03em; margin: 0 0 1.7rem;
 }
-.hero .lede { font-size: 1.16rem; color: var(--muted); max-width: 42ch; margin: 0 0 2.2rem; }
+.hero .lede { font-size: 1.16rem; color: var(--muted); max-width: 42ch; margin: 0 0 2.2rem; text-justify: inter-word; text-align: justify;}
 
 .actions { display: flex; flex-wrap: wrap; gap: 0.8rem; }
 .btn {
@@ -188,7 +188,7 @@ h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; color: var(--rose); 
 .chips { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.4rem; }
 .chip {
   font-family: var(--font-mono); font-size: 0.76rem; letter-spacing: 0.04em;
-  padding: 0.5rem 0.85rem; border: 1px solid var(--line-2);
+  padding: 0.4rem 0.4rem; border: 1px solid var(--line-2);
   color: var(--text); background: rgba(143,202,214,0.04); border-radius: 1px;
   display: inline-flex; align-items: center; gap: 0.5em;
 }
