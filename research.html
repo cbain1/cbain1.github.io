@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Catherine M. Bain</title>
+  <meta name="description" content="Research program of Catherine M. Bain: machine learning and psychometric approaches to classification, variable selection, and the measurement of misophonia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <svg viewBox="0 0 24 27" fill="none" aria-hidden="true"><path d="M8 3 L16 3 L21 9 L12 25 L3 9 Z" stroke="#8FCAD6" stroke-width="1.3"/><path d="M12 3 L12 25 M3 9 L21 9 M8 3 L6 9 M16 3 L18 9" stroke="#8FCAD6" stroke-width="0.9" opacity="0.65"/></svg>
+        Catherine M. Bain
+      </a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="assets/Bain_CV.pdf" class="ext" target="_blank" rel="noopener">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="section" style="padding-bottom:1rem;">
+    <div class="wrap">
+      <p class="eyebrow">Research</p>
+      <h2 style="font-size:clamp(2rem,4.5vw,2.9rem);max-width:20ch;">Making classification <em>trustworthy</em> when the assumptions break.</h2>
+      <p style="font-size:1.1rem;color:var(--ink-soft);">Accurate psychological classification depends on measurement models that stay reliable when standard assumptions are violated. My work sits at the intersection of psychometrics and machine learning, and asks how methods actually perform under the messy conditions researchers face in practice.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="wrap">
+
+      <div class="line">
+        <div class="num">I</div>
+        <div>
+          <h3>Classification under item bias</h3>
+          <p>A central focus of my methodological work is the consequence of unmodeled differential item functioning (DIF) for diagnostic accuracy. DIF occurs when people with the same level of a latent trait respond differently to an item because of group membership, introducing systematic bias that can distort classification, especially for minority group members. Using large Monte Carlo simulations, I compare item response theory models with random forest classifiers across a wide range of conditions, and find that random forests consistently outperform IRT classifications when DIF cannot be directly modeled. This points to machine learning classifiers as practical alternatives when item bias is suspected but hard to specify. I am now extending this to multidimensional contexts, where the interaction between latent structure and unmodeled DIF is largely unknown.</p>
+          <ul class="refs">
+            <li><strong>Bain, C.M.</strong>, Manapat, P.D., Manapat, D.M., Brennan, K.B., &amp; Grimm, K.J. (2026). When DIF Goes Unmodeled: Assessing the Viability of Random Forest for Diagnostic Classification. <em>Journal of Behavioral Data Science.</em></li>
+            <li><strong>Bain, C.M.</strong>, Manapat, P.D., &amp; Manapat, D.M. A Monte Carlo Comparison of IRT and Random Forest Classification: Effects of Multidimensionality and DIF. <em>In progress.</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="num">II</div>
+        <div>
+          <h3>Variable selection with complex and incomplete data</h3>
+          <p>Psychological data are often high dimensional, incomplete, or both. Researchers have leaned on regularized regression such as LASSO and elastic net, which do well under ideal conditions but degrade as complexity grows. Through large simulation studies, I evaluate LASSO, elastic net, and genetic-algorithm-based selection under data that are missing completely at random and missing at random. The genetic algorithm implementation proved most robust to changes in completeness, giving practical guidance for incomplete data. To make these methods usable, I publish accessible, reproducible tutorials in R.</p>
+          <ul class="refs">
+            <li><strong>Bain, C.M.</strong>, Shi, D., Banad, Y.M., Ethridge, L.E., Norris, J.E., &amp; Loeffelman, J.E. (2025). A Tutorial on Supervised Machine Learning Variable Selection Methods for the Psychological Sciences Using R. <em>Journal of Behavioral Data Science, 5(1), 103&ndash;145.</em></li>
+            <li><strong>Bain, C.M.</strong> &amp; Shi, D. (2024). Investigating Variable Selection Techniques Under Missing Data: A Simulation Study. <em>Quantitative Psychology, Springer.</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="num">III</div>
+        <div>
+          <h3>Measuring and characterizing misophonia</h3>
+          <p>Much of my applied work focuses on misophonia. Despite a published consensus definition, there are no formal diagnostic criteria, which complicates recruitment, clinical translation, and the development of reliable scales and biomarkers. Using factor analysis and multidimensional IRT, I led the first comprehensive psychometric evaluation of the Duke Misophonia Questionnaire, identifying a novel five-factor structure and mapping where the instrument measures most precisely. Building on that, I co-lead work on a short form using IRT and machine learning item reduction, and I lead a latent profile analysis to identify clinically meaningful misophonia subtypes that may reflect distinct neurophysiological mechanisms.</p>
+          <ul class="refs">
+            <li><strong>Bain, C.M.</strong>, Norris, J.E., Conley, A., Manapat, P.D., &amp; Ethridge, L.E. (2025). A Psychometric Evaluation of the Duke Misophonia Questionnaire. <em>Journal of Clinical Psychology, 81(12), 1195&ndash;1212.</em></li>
+            <li>Hansen, H.A., Norris, J.E., <strong>Bain, C.M.</strong>, Ethridge, L.E., &amp; Tardif, C.L. (2026). Selective Disruption of Salience-Network Anterior Insula Connectivity in Misophonia. <em>Human Brain Mapping, 47(3), e70468.</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="num">IV</div>
+        <div>
+          <h3>Collaborations across domains</h3>
+          <p>I contribute quantitative expertise to applied teams across occupational and industrial-organizational psychology, health behavior and cessation research, and educational psychology, typically assessing dimensionality with factor analysis, running item-level IRT, and evaluating validity and reliability. I also work at the intersection of psychology and computational science, applying agent-based modeling and simulation to emergent social phenomena. This breadth reflects a capacity to translate methodology across very different scientific contexts.</p>
+          <ul class="refs">
+            <li>Sipes, A., <strong>Bain, C.M.</strong>, Kremer-Herman, N., &amp; Gupta, A. (In Press). Modeling Depression Across Selfish and Cooperative Artificial Societies. <em>ALIFE 2026.</em></li>
+            <li>Cavazos, J.T., Hauck, K.A., Baskin, H.M., &amp; <strong>Bain, C.M.</strong> (2024). ChatGPT Goes To College. <em>Teaching of Psychology, 52(3), 357&ndash;368.</em></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="fname">Catherine M. Bain</p>
+        <p>Assistant Professor of Quantitative Psychology<br>California State University, Northridge</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:catherine.bain@csun.edu">catherine.bain@csun.edu</a></li>
+          <li><a href="assets/Bain_CV.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="https://github.com/cbain1" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.ncbi.nlm.nih.gov/myncbi/catherine.bain.1/bibliography/public/" target="_blank" rel="noopener">Bibliography</a></li>
+          <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap"><p class="copy"><svg viewBox="0 0 24 27" fill="none" aria-hidden="true"><path d="M8 3 L16 3 L21 9 L12 25 L3 9 Z" stroke="currentColor" stroke-width="1.3"/></svg>&copy; <span id="yr"></span> Catherine M. Bain &middot; CARAT</p></div>
+  </footer>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

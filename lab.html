@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARAT Lab — Catherine M. Bain</title>
+  <meta name="description" content="CARAT: a research program by Catherine M. Bain on Classification, Assessment, Replication, Algorithms, and Testing in quantitative psychology.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <svg viewBox="0 0 24 27" fill="none" aria-hidden="true"><path d="M8 3 L16 3 L21 9 L12 25 L3 9 Z" stroke="#8FCAD6" stroke-width="1.3"/><path d="M12 3 L12 25 M3 9 L21 9 M8 3 L6 9 M16 3 L18 9" stroke="#8FCAD6" stroke-width="0.9" opacity="0.65"/></svg>
+        Catherine M. Bain
+      </a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="lab.html" class="active">Lab</a></li>
+        <li><a href="assets/Bain_CV.pdf" class="ext" target="_blank" rel="noopener">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="section lab-hero" style="text-align:center;padding-bottom:1.5rem;">
+    <div class="wrap">
+      <center><img src="assets/caratlab_large_3.png" alt='lab logo' width="300" ></center>
+      <!-- <span class="eyebrow" style="justify-content:center;">The Lab</span> -->
+      <!-- <h1 style="font-size:clamp(3rem,10vw,6rem);margin:0;">CARAT</h1> -->
+      <p class="sub" style="max-width:52ch;margin:1.4rem auto 0;font-size:1.15rem;">A methods lab for trustworthy classification. We build and stress-test the psychometric and machine learning tools that decide who gets measured, and how well.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="wrap">
+      <span class="eyebrow">Mission</span>
+      <h2>Accurate, fair, <em>interpretable</em>.</h2>
+      <p>Psychological classification is only as good as the measurement underneath it. When standard assumptions break, through item bias, missing data, or unmodeled complexity, ordinary methods quietly lose accuracy, and the people most likely to be misclassified are often those already underserved. CARAT studies where those failures happen and which methods hold up, pairing item response theory and factor analysis with machine learning, and testing everything through large simulation studies before recommending it for real data. Much of our applied work centers on misophonia, where reliable measurement is still being built.</p>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="wrap">
+      <span class="eyebrow">The name</span>
+      <h2>Five commitments, one acronym.</h2>
+      <div class="acronym">
+        <div class="row">
+          <div class="letter">C</div>
+          <div>
+            <h3>Classification</h3>
+            <p>Building and comparing classifiers for psychological data, and asking when a machine learning model beats a traditional psychometric one.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="letter">A</div>
+          <div>
+            <h3>Assessment</h3>
+            <p>Evaluating and sharpening measurement instruments, from full-length scales to efficient short forms that keep their precision.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="letter">R</div>
+          <div>
+            <h3>Replication</h3>
+            <p>Asking whether findings hold up, including whether factor structures themselves replicate across samples and studies.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="letter">A</div>
+          <div>
+            <h3>Algorithms</h3>
+            <p>Random forests, regularized regression, and genetic algorithms for classification and variable selection under realistic conditions.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="letter">T</div>
+          <div>
+            <h3>Testing</h3>
+            <p>Monte Carlo simulation as the proving ground: stress-testing methods under item bias, missing data, and multidimensionality before they reach applied work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow">Current themes</span>
+      <h2>What we are working on</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="yr">Classification &amp; item bias</span>
+          <p class="ttl">Diagnostic accuracy under unmodeled DIF</p>
+          <p class="meta">Comparing IRT and random forest classification when differential item functioning cannot be directly modeled, now extending to multidimensional assessments.</p>
+        </article>
+        <article class="card">
+          <span class="yr">Algorithms &amp; missing data</span>
+          <p class="ttl">Variable selection when data are incomplete</p>
+          <p class="meta">Benchmarking LASSO, elastic net, and genetic-algorithm selection across missing-data mechanisms, with reproducible tutorials in R.</p>
+        </article>
+        <article class="card">
+          <span class="yr">Assessment &amp; misophonia</span>
+          <p class="ttl">Measuring and characterizing misophonia</p>
+          <p class="meta">Psychometric evaluation of the Duke Misophonia Questionnaire, a short form, and a latent profile analysis of symptom subtypes.</p>
+        </article>
+      </div>
+      <p style="margin-top:1.7rem;"><a href="research.html">Read the full research program &rarr;</a></p>
+    </div>
+  </section>
+
+  <section class="section alt lab-band">
+    <div class="wrap">
+      <img class="logo" src="assets/carat-logo.png" alt="CARAT lab logo: Classification, Assessment, Replication, Algorithms, Testing">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow">Join</span>
+      <h2>Work with the lab</h2>
+      <div class="join">
+        <h3>Prospective students &amp; collaborators</h3>
+        <p>I mentor undergraduate researchers through to conference presentations and authorship, and I welcome collaborations that bring quantitative methods to applied measurement problems. If that sounds like your work, get in touch.</p>
+        <a class="btn primary" href="mailto:catherine.bain@csun.edu">Email Catherine</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="fname">Catherine M. Bain</p>
+        <p>Assistant Professor of Quantitative Psychology<br>California State University, Northridge</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:catherine.bain@csun.edu">catherine.bain@csun.edu</a></li>
+          <li><a href="assets/Bain_CV.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="https://github.com/cbain1" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.ncbi.nlm.nih.gov/myncbi/catherine.bain.1/bibliography/public/" target="_blank" rel="noopener">Bibliography</a></li>
+          <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap"><p class="copy"><svg viewBox="0 0 24 27" fill="none" aria-hidden="true"><path d="M8 3 L16 3 L21 9 L12 25 L3 9 Z" stroke="currentColor" stroke-width="1.3"/></svg>&copy; <span id="yr"></span> Catherine M. Bain &middot; CARAT</p></div>
+  </footer>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>
