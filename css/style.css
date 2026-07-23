@@ -294,7 +294,11 @@ h1 em, h2 em, h3 em, p em { font-style: italic; font-weight: 400; color: var(--r
 .footer li { margin-bottom: 0.5rem; font-size: 0.9rem; }
 .footer .copy { margin-top: 2.6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.05em; color: #6B807E; display: flex; align-items: center; gap: 0.6rem; }
 .footer .copy svg { width: 13px; height: 15px; color: var(--teal-dim); }
-
+.footer-icon {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+}
 /* ---------- responsive ---------- */
 @media (max-width: 860px) {
   .hero-grid { grid-template-columns: 1fr; }
