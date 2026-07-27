@@ -259,7 +259,7 @@ h1 em, h2 em, h3 em, p em { font-style: italic; font-weight: 400; color: var(--r
 
 /* ---------- CARAT lab band + page ---------- */
 .lab-band { text-align: center; }
-.lab-band .logo { max-width: 640px; margin: 1.6rem auto 0; opacity: 0.96; }
+.lab-band .logo { max-width: min(640px, 100%); margin: 1.6rem auto 0; opacity: 0.96; }
 .lab-band .expand { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1.5rem; margin: 1.7rem 0 2rem; }
 .lab-band .expand span { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
 .lab-band .expand b { color: var(--rose); font-weight: 600; }
