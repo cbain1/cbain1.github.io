@@ -5,35 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CARAT Lab — Catherine M. Bain</title>
   <meta name="description" content="CARAT: a research program by Catherine M. Bain on Classification, Assessment, Replication, Algorithms, and Testing in quantitative psychology.">
-  <link rel="icon" href="assets/caratlab_triangle_only.png" type="image/png">
+  <link rel="icon" href="assets/caratlab_triangle_only_ink.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div id="nav-placeholder"></div>
   <script src="/js/include-nav.js"></script>
 
-  <header class="section lab-hero" style="text-align:center;padding-bottom:1.5rem;">
+  <header class="section lab-band" style="padding-bottom:1rem;">
     <div class="wrap">
-      <center><img src="assets/caratlab_large_3.png" alt='lab logo' width="300" ></center>
-      <!-- <span class="eyebrow" style="justify-content:center;">The Lab</span> -->
-      <!-- <h1 style="font-size:clamp(3rem,10vw,6rem);margin:0;">CARAT</h1> -->
-      <!-- <p class="sub" style="max-width:52ch;margin:1.4rem auto 0;font-size:1.15rem;">A methods lab for trustworthy classification. We build and stress-test the psychometric and machine learning tools that decide who gets measured, and how well.</p> -->
+      <img class="lab-logo" src="assets/caratlab_large_3_ink.png" alt="CARAT lab logo">
     </div>
   </header>
 
   <section class="section" style="padding-top:1rem;">
     <div class="wrap">
-      <span class="eyebrow">Mission</span>
-      <h2>Accurate, fair, <em>equitable</em>.</h2>
-      <p>The ability of a model to accurately classify an individual is highly dependent upon the quality of the measurements used as input variables. Real world data is messy: items may be biased, data may be missing, and it models may be unable to capture necessary complexity. When this happens, methods lose accuracy, and the people most likely to be misclassified are often those already underserved. The CARAT lab focuses on methodological innovations that address these limitations through connections between psychometrics and machine learning. Much of our applied work centers on misophonia, where reliable measurement is still being built.</p>
+      <h2>Mission</h2>
+      <p class="prose">A model can only classify a person as well as the measurements it takes as input. Real-world data are messy: items can be biased, data can be missing, and models can miss necessary complexity. When that happens, methods lose accuracy, and the people most likely to be misclassified are often those already underserved. The CARAT lab develops methods that address these limits by connecting psychometrics and machine learning. Much of our applied work centers on misophonia, where reliable measurement is still being built.</p>
     </div>
   </section>
 
   <section class="section alt">
     <div class="wrap">
+      <h2>What CARAT stands for</h2>
       <div class="acronym">
         <div class="row">
           <div class="letter">C</div>
@@ -53,21 +50,21 @@
           <div class="letter">R</div>
           <div>
             <h3>Replication</h3>
-            <p>Asking whether findings hold up, with a particular focus on the replication of measurement, and modeling good open science practices.</p>
+            <p>Asking whether findings hold up, with a focus on the replication of measurement, and modeling good open-science practice.</p>
           </div>
         </div>
         <div class="row">
           <div class="letter">A</div>
           <div>
             <h3>Algorithms</h3>
-            <p>Random forests, CART, regularized regression, genetic algorithms, etc. for classification and variable selection under realistic conditions.</p>
+            <p>Random forests, CART, regularized regression, and genetic algorithms for classification and variable selection under realistic conditions.</p>
           </div>
         </div>
         <div class="row">
           <div class="letter">T</div>
           <div>
             <h3>Testing</h3>
-            <p>Using Monte Carlo simulation to stress-test methods under realistic data conditions to make practical recommendations to applied researchers.</p>
+            <p>Using Monte Carlo simulation to stress-test methods under realistic data conditions and make practical recommendations to applied researchers.</p>
           </div>
         </div>
       </div>
@@ -76,50 +73,38 @@
 
   <section class="section">
     <div class="wrap">
-      <span class="eyebrow">Current themes</span>
       <h2>What we are working on</h2>
-      <div class="cards">
-        <article class="card">
-          <span class="yr">Classification &amp; item bias</span>
+      <div class="worklist">
+        <article class="work">
+          <span class="tag">Classification and item bias</span>
           <p class="ttl">Diagnostic accuracy under unmodeled DIF</p>
           <p class="meta">Comparing IRT and random forest classification when differential item functioning cannot be directly modeled, now extending to multidimensional assessments.</p>
         </article>
-        <article class="card">
-          <span class="yr">Algorithms &amp; missing data</span>
+        <article class="work">
+          <span class="tag">Algorithms and missing data</span>
           <p class="ttl">Variable selection when data are incomplete</p>
           <p class="meta">Benchmarking LASSO, elastic net, and genetic-algorithm selection across missing-data mechanisms, with reproducible tutorials in R.</p>
         </article>
-        <article class="card">
-          <span class="yr">Assessment &amp; misophonia</span>
+        <article class="work">
+          <span class="tag">Assessment and misophonia</span>
           <p class="ttl">Measuring and characterizing misophonia</p>
           <p class="meta">Psychometric evaluation of the Duke Misophonia Questionnaire, a short form, and a latent profile analysis of symptom subtypes.</p>
         </article>
       </div>
-      <p style="margin-top:1.7rem;"><a href="research.html">Read the full research program &rarr;</a></p>
+      <p style="margin-top:1.6rem;"><a class="textlink" href="research.html">Read the full research program</a></p>
     </div>
   </section>
 
-  <section class="section alt lab-band">
+  <section class="section alt">
     <div class="wrap">
-      <img class="logo" src="assets/carat-logo.png" alt="CARAT lab logo: Classification, Assessment, Replication, Algorithms, Testing">
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <span class="eyebrow">Join</span>
       <h2>Work with the lab</h2>
-      <div class="join">
-        <h3>Prospective students &amp; collaborators</h3>
-        <p>I am currently looking to mentor new graduate and undergraduate level researchers. I also welcome collaborations that bring quantitative methods to applied measurement problems. Please don't hesitate to reach out!</p>
-        <a class="btn primary" href="mailto:catherine.bain@csun.edu">Email Catherine</a>
-      </div>
+      <p class="prose">I am looking to mentor new graduate and undergraduate researchers, and I welcome collaborations that bring quantitative methods to applied measurement problems. If that sounds like you, please reach out.</p>
+      <p style="margin-top:1.4rem;"><a class="btn" href="mailto:catherine.bain@csun.edu">Email Catherine</a></p>
     </div>
   </section>
 
   <div id="footer-placeholder"></div>
-<script src="/js/include-footer.js"></script>
-  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+  <script src="/js/include-footer.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

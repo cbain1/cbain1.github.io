@@ -5,82 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research — Catherine M. Bain</title>
   <meta name="description" content="Research program of Catherine M. Bain: machine learning and psychometric approaches to classification, variable selection, and the measurement of misophonia.">
+  <link rel="icon" href="assets/caratlab_triangle_only_ink.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/caratlab_triangle_only.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div id="nav-placeholder"></div>
   <script src="/js/include-nav.js"></script>
 
-  <header class="section" style="padding-bottom:1rem;">
+  <header class="section" style="padding-bottom:0.5rem;">
     <div class="wrap">
-      <p class="eyebrow">Research</p>
-      <h2 style="font-size:clamp(2rem,4.5vw,2.9rem);max-width:20ch;">Making classification <em>trustworthy</em>.</h2>
-      <p style="font-size:1.1rem;color:var(--ink-soft);">Accurate psychological classification depends on measurement models that stay reliable when standard assumptions are violated. My work sits at the intersection of psychometrics and machine learning, and asks how methods actually perform under the messy conditions researchers face in practice.</p>
+      <h2 style="font-size:clamp(1.9rem,4vw,2.6rem);">Research</h2>
+      <p class="lead" style="margin-top:0.8rem;">Accurate psychological classification depends on measurement models that stay reliable when standard assumptions are violated. My work sits at the intersection of psychometrics and machine learning, and asks how methods perform under the conditions researchers face in practice.</p>
     </div>
   </header>
 
   <section class="section" style="padding-top:1rem;">
     <div class="wrap">
 
-      <div class="line">
-        <div class="num">I</div>
-        <div>
-          <h3>Classification under item bias</h3>
-          <p>A central focus of my methodological work is the consequence of unmodeled differential item functioning (DIF) for diagnostic accuracy. DIF occurs when people with the same level of a latent trait respond differently to an item because of group membership, introducing systematic bias that can distort classification, especially for minority group members. Using large Monte Carlo simulations, I compare item response theory models with random forest classifiers across a wide range of conditions, and find that random forests consistently outperform IRT classifications when DIF cannot be directly modeled. This points to machine learning classifiers as practical alternatives when item bias is suspected but hard to specify. I am now extending this to multidimensional contexts, where the interaction between latent structure and unmodeled DIF is largely unknown.</p>
-          <ul class="refs">
-            <li><strong>Bain, C.M.</strong>, Manapat, P.D., Manapat, D.M., Brennan, K.B., &amp; Grimm, K.J. (2026). When DIF Goes Unmodeled: Assessing the Viability of Random Forest for Diagnostic Classification. <em>Journal of Behavioral Data Science.</em></li>
-            <!-- <li><strong>Bain, C.M.</strong>, Manapat, P.D., &amp; Manapat, D.M. A Monte Carlo Comparison of IRT and Random Forest Classification: Effects of Multidimensionality and DIF. <em>In progress.</em></li> -->
-          </ul>
-        </div>
+      <div class="area">
+        <h3>Classification under item bias</h3>
+        <p>A central focus of my methodological work is the effect of unmodeled differential item functioning (DIF) on diagnostic accuracy. DIF occurs when people with the same level of a latent trait respond differently to an item because of group membership, which introduces systematic bias that can distort classification, especially for minority group members. Using large Monte Carlo simulations, I compare item response theory (IRT) models with random forest classifiers across many conditions, and find that random forests consistently outperform IRT classifications when DIF cannot be directly modeled. This points to machine learning classifiers as practical alternatives when item bias is suspected but hard to specify. I am extending this work to multidimensional contexts, where the interaction between latent structure and unmodeled DIF is still largely unknown.</p>
+        <ul class="refs">
+          <li><strong>Bain, C.M.</strong>, Manapat, P.D., Manapat, D.M., Brennan, K.B., &amp; Grimm, K.J. (2026). When DIF goes unmodeled: assessing the viability of random forest for diagnostic classification. <em>Journal of Behavioral Data Science.</em></li>
+        </ul>
       </div>
 
-      <div class="line">
-        <div class="num">II</div>
-        <div>
-          <h3>Variable selection with complex and incomplete data</h3>
-          <p>Psychological data are often high dimensional, incomplete, or both. Researchers have leaned on regularized regression such as LASSO and elastic net, which do well under ideal conditions but degrade as complexity grows. Through large simulation studies, I evaluate LASSO, elastic net, and genetic-algorithm-based selection under data that are missing completely at random and missing at random. The genetic algorithm implementation proved most robust to changes in completeness, giving practical guidance for incomplete data. To make these methods usable, I publish accessible, reproducible tutorials in R.</p>
-          <ul class="refs">
-            <li><strong>Bain, C.M.</strong>, Shi, D., Banad, Y.M., Ethridge, L.E., Norris, J.E., &amp; Loeffelman, J.E. (2026). Comparing the use of supervised machine learning variable selection methods in the context of two-group classification in the psychological and health sciences. <em>Frontiers in Psychology, 17, 1&ndash;20.</em></li>
-            <li><strong>Bain, C.M.</strong>, Shi, D., Banad, Y.M., Ethridge, L.E., Norris, J.E., &amp; Loeffelman, J.E. (2025). A Tutorial on Supervised Machine Learning Variable Selection Methods for the Psychological Sciences Using R. <em>Journal of Behavioral Data Science, 5(1), 103&ndash;145.</em></li>
-            <li><strong>Bain, C.M.</strong> &amp; Shi, D. (2024). Investigating Variable Selection Techniques Under Missing Data: A Simulation Study. <em>Quantitative Psychology, Springer.</em></li>
-          </ul>
-        </div>
+      <div class="area">
+        <h3>Variable selection with complex and incomplete data</h3>
+        <p>Psychological data are often high dimensional, incomplete, or both. Researchers tend to rely on regularized regression such as LASSO and elastic net, which perform well under ideal conditions but degrade as complexity grows. Through large simulation studies, I evaluate LASSO, elastic net, and genetic-algorithm-based selection under data that are missing completely at random and missing at random. The genetic algorithm proved most robust to changes in completeness, which gives practical guidance for incomplete data. To make these methods usable, I publish reproducible tutorials in R.</p>
+        <ul class="refs">
+          <li><strong>Bain, C.M.</strong>, Shi, D., Banad, Y.M., Ethridge, L.E., Norris, J.E., &amp; Loeffelman, J.E. (2026). Comparing the use of supervised machine learning variable selection methods in the context of two-group classification in the psychological and health sciences. <em>Frontiers in Psychology, 17, 1&ndash;20.</em></li>
+          <li><strong>Bain, C.M.</strong>, Shi, D., Banad, Y.M., Ethridge, L.E., Norris, J.E., &amp; Loeffelman, J.E. (2025). A tutorial on supervised machine learning variable selection methods for the psychological sciences using R. <em>Journal of Behavioral Data Science, 5(1), 103&ndash;145.</em></li>
+          <li><strong>Bain, C.M.</strong> &amp; Shi, D. (2024). Investigating variable selection techniques under missing data: a simulation study. <em>Quantitative Psychology, Springer.</em></li>
+        </ul>
       </div>
 
-      <div class="line">
-        <div class="num">III</div>
-        <div>
-          <h3>Measuring and characterizing misophonia</h3>
-          <p>Much of my applied work focuses on misophonia. Despite a published consensus definition, there are no formal diagnostic criteria, which complicates recruitment, clinical translation, and the development of reliable scales and biomarkers. Using factor analysis and multidimensional IRT, I led the first comprehensive psychometric evaluation of the Duke Misophonia Questionnaire, identifying a novel five-factor structure and mapping where the instrument measures most precisely. Building on that, I co-lead work on a short form using IRT and machine learning item reduction, and I lead a latent profile analysis to identify clinically meaningful misophonia subtypes that may reflect distinct neurophysiological mechanisms.</p>
-          <ul class="refs">
-            <li><strong>Bain, C.M.</strong>, Norris, J.E., Conley, A., Manapat, P.D., &amp; Ethridge, L.E. (2025). A Psychometric Evaluation of the Duke Misophonia Questionnaire. <em>Journal of Clinical Psychology, 81(12), 1195&ndash;1212.</em></li>
-            <li>Hansen, H.A., Norris, J.E., <strong>Bain, C.M.</strong>, Ethridge, L.E., &amp; Tardif, C.L. (2026). Selective Disruption of Salience-Network Anterior Insula Connectivity in Misophonia. <em>Human Brain Mapping, 47(3), e70468.</em></li>
-          </ul>
-        </div>
+      <div class="area">
+        <h3>Measuring and characterizing misophonia</h3>
+        <p>Much of my applied work focuses on misophonia. Despite a published consensus definition, there are no formal diagnostic criteria, which complicates recruitment, clinical translation, and the development of reliable scales and biomarkers. Using factor analysis and multidimensional IRT, I led the first comprehensive psychometric evaluation of the Duke Misophonia Questionnaire, identifying a five-factor structure and mapping where the instrument measures most precisely. Building on that, I co-lead work on a short form using IRT and machine learning item reduction, and I lead a latent profile analysis to identify misophonia subtypes that may reflect distinct neurophysiological mechanisms.</p>
+        <ul class="refs">
+          <li><strong>Bain, C.M.</strong>, Norris, J.E., Conley, A., Manapat, P.D., &amp; Ethridge, L.E. (2025). A psychometric evaluation of the Duke Misophonia Questionnaire. <em>Journal of Clinical Psychology, 81(12), 1195&ndash;1212.</em></li>
+          <li>Hansen, H.A., Norris, J.E., <strong>Bain, C.M.</strong>, Ethridge, L.E., &amp; Tardif, C.L. (2026). Selective disruption of salience-network anterior insula connectivity in misophonia. <em>Human Brain Mapping, 47(3), e70468.</em></li>
+        </ul>
       </div>
 
-      <div class="line">
-        <div class="num">IV</div>
-        <div>
-          <h3>Collaborations across domains</h3>
-          <p>I contribute quantitative expertise to applied teams across occupational and industrial-organizational psychology, health behavior and cessation research, and educational psychology, typically assessing dimensionality with factor analysis, running item-level IRT, and evaluating validity and reliability. I also work at the intersection of psychology and computational science, applying agent-based modeling and simulation to emergent social phenomena. This breadth reflects a capacity to translate methodology across very different scientific contexts.</p>
-          <ul class="refs">
-            <li>Sipes, A., <strong>Bain, C.M.</strong>, Kremer-Herman, N., &amp; Gupta, A. (In Press). Modeling Depression Across Selfish and Cooperative Artificial Societies. <em>ALIFE 2026.</em></li>
-            <li>Cavazos, J.T., Hauck, K.A., Baskin, H.M., &amp; <strong>Bain, C.M.</strong> (2024). ChatGPT Goes To College. <em>Teaching of Psychology, 52(3), 357&ndash;368.</em></li>
-          </ul>
-        </div>
+      <div class="area">
+        <h3>Collaborations across domains</h3>
+        <p>I contribute quantitative expertise to applied teams across occupational and industrial-organizational psychology, health behavior and cessation research, and educational psychology. This work typically means assessing dimensionality with factor analysis, running item-level IRT, and evaluating validity and reliability. I also work at the intersection of psychology and computational science, applying agent-based modeling and simulation to emergent social phenomena.</p>
+        <ul class="refs">
+          <li>Sipes, A., <strong>Bain, C.M.</strong>, Kremer-Herman, N., &amp; Gupta, A. (in press). Modeling depression across selfish and cooperative artificial societies. <em>ALIFE 2026.</em></li>
+          <li>Cavazos, J.T., Hauck, K.A., Baskin, H.M., &amp; <strong>Bain, C.M.</strong> (2024). ChatGPT goes to college. <em>Teaching of Psychology, 52(3), 357&ndash;368.</em></li>
+        </ul>
       </div>
 
     </div>
   </section>
 
   <div id="footer-placeholder"></div>
-<script src="/js/include-footer.js"></script>
-  <!-- <script>document.getElementById('yr').textContent=new Date().getFullYear();</script> -->
+  <script src="/js/include-footer.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
