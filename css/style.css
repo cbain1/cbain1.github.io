@@ -227,4 +227,39 @@ p:last-child { margin-bottom: 0; }
   .acronym .row { grid-template-columns: 1fr; gap: 0.4rem; }
 }
 
+/* ---------- style layer ---------- */
+
+/* short accent rule under major section headings */
+.section > .wrap > h2::after {
+  content: ""; display: block; width: 2.25rem; height: 3px;
+  background: var(--accent); border-radius: 2px; margin-top: 0.8rem;
+}
+
+/* soft filled cards (no borders) */
+.cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-top: 1.7rem; }
+.card {
+  background: var(--surface); border-radius: 5px; padding: 1.4rem 1.55rem;
+  box-shadow: 0 1px 2px rgba(28,28,26,0.05);
+  transition: box-shadow .18s ease, transform .18s ease;
+}
+.section.alt .card { background: #fff; }
+.card:hover { box-shadow: 0 10px 28px rgba(28,28,26,0.10); transform: translateY(-2px); }
+.card .tag { font-family: var(--font-head); font-size: 0.82rem; font-weight: 500; color: var(--accent); }
+.card .ttl { font-family: var(--font-head); font-weight: 600; font-size: 1.08rem; line-height: 1.3; margin: 0.45rem 0 0.45rem; }
+.card .meta { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+/* deep-teal brand panel, where the CARAT logo belongs */
+.section.brandpanel { background: #11272C; color: #DCEAE9; text-align: center; }
+.section.brandpanel h2 { color: #fff; }
+.section.brandpanel h2::after { margin-inline: auto; }
+.section.brandpanel p { color: #B9CECC; margin-inline: auto; }
+.section.brandpanel a.textlink { color: #86C8D4; }
+.section.brandpanel a.textlink:hover { color: #BDE4EA; }
+.brand-logo { display: block; width: 480px; max-width: 100%; height: auto; margin: 0 auto; }
+.brand-logo.lockup { width: 280px; }
+
+/* teaching institution panels */
+.tgroup.panel { background: var(--surface); border-radius: 5px; padding: 1.5rem 1.8rem; margin-bottom: 1.1rem; }
+.tgroup.panel .trow { grid-template-columns: 8rem 1fr; }
+
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
